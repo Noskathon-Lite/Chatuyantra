@@ -32,6 +32,14 @@ const usersSchema = new mongoose.Schema({
         type: Boolean,
         default: false,
     },
+    verificationCode: {      
+        type: String,
+        select: false,
+    },
+    verificationCodeValidation: {      
+        type: String,
+        select: false,
+    },
 
 }, { timestamps: true });
 
