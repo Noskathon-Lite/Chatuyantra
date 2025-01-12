@@ -4,6 +4,7 @@ const http = require('http');
 const cookieParser = require('cookie-parser');
 const cors = require('cors');
 const mongoose = require('mongoose');
+const authRouter = require('./routers/authRouter');
 
 const app = express();
 
@@ -27,6 +28,8 @@ mongoose.connect(process.env.MONGODB_URI).then(() => {
 app.get('/', (req, res) => {
     res.json({ message: 'Hello World' });
   });
+
+  app.use('/api/auth', authRouter);
 
 // Start the server
 const PORT = process.env.PORT || 3000;
