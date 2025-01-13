@@ -27,7 +27,7 @@ const VerifyOtp = ({ navigation, route }) => {
     try {
       // Sending the OTP and email to the backend
       const response = await axios.patch(
-        'https://723a-110-44-118-28.ngrok-free.app/auth/verify-otp',
+        'https://723a-110-44-118-28.ngrok-free.app/api/auth/verify-otp',
         {
           email, // Send the email
           providedCode: otp, // OTP is sent as 'providedCode'
