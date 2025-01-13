@@ -33,7 +33,7 @@ const SignUpPage = ({ navigation, setIsLoggedIn }) => {
 
         // Step 2: Send OTP request after successful sign-up using PATCH request
         const otpResponse = await axios.patch(
-          "https://cf48-2405-acc0-1307-2b25-00-5.ngrok-free.app/api/auth/send-otp",
+          "https://723a-110-44-118-28.ngrok-free.app/api/auth/send-otp",
           { email }
         );
 
