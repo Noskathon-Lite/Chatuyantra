@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "my-new-project",
+    "slug": "my-new-project",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.myproject.reactnative",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app requires access to your location to display ambulance locations.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app requires access to your location to display ambulance locations."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "package": "com.myproject.reactnative",
+      "config": {
+        "googleMaps": {
+          "apiKey": "AIzaSyCSLm2ipOWjy3WfwUbpJobOyr7wRBNSqgg"
+        }
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
